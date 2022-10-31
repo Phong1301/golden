@@ -49,12 +49,13 @@ function addToCart(id){
         });
     }
     
+    
+    // const set = document.querySelector(".shop-item-button");
+    // set.classList.add("inactive")
+    // set.innerHTML = `<img class="check" src="app/assets/check.png" alt="">`
+    
     updateCart();
     
-    
-    const set = document.querySelector(".shop-item-button");
-    set.classList.add("inactive")
-    set.innerHTML = `<img class="check" src="app/assets/check.png" alt="">`
         
 }
 
@@ -138,12 +139,13 @@ function removeItemCart(id){
     updateCart();
 }
 
+
+
 function generalCart(){
-    if(cart.length !== 0){
-        renderCartItems()
-    }else{
+    if(cart.length === 0){
         empty.innerHTML = `<p class="cart-empty-text">Your cart is empty.</p>`
     }
 }
 
 generalCart()
+

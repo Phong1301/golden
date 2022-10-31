@@ -79,13 +79,14 @@
     margin: 16px 0;
     position: relative;
 }
-
-.card-body {
+.card-body{
     height: calc(100% - 98px);
     position: relative;
     overflow-y: scroll;
-    overflow-x: hidden;
     scrollbar-width: none;
+}
+.card-body::-webkit-scrollbar {
+    display: none;
 }
 
 .shop-item:first-child {
